@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+hr {
+    margin: 10px;
+}
 body {
     display: flex;
     margin: 3px;
@@ -17,9 +20,11 @@ body {
     background-image: url(resources/background_images.jpg);
     background-size: cover;
     background-attachment: fixed;
+    min-height: 2000px;
 }
 header {
     position: fixed;
+    top: 20px;
     display: flex;
     margin: 3px;
     background-color: var(--color1);
@@ -48,10 +53,33 @@ nav {
     border-radius: 10px;
 }
 main {
-    display: flex;
-    margin: 3px;
     padding: 10px;
+    color: var(--color3);
+}
+
+#inicio {
+    display: flex;
     flex: 1 1 100vw;
+    justify-content: left;
+    max-height: 250px;
+    margin: 150px 3px 100px 3px;
+}
+#inicio > p {
+    max-width: 500px;
+    margin: 10px;
+}
+#inicio > h1 {
+    width: 350px;
+    font-size: 100px;
+}
+#sobre {
+    margin: 150px 3px 3px 3px;
+}
+#projetos {
+    margin: 150px 3px 3px 3px;
+}
+#contato {
+    margin: 150px 3px 3px 3px;
 }
 aside {
     display: flex;
