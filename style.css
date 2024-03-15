@@ -17,7 +17,7 @@ body {
     margin: 3px;
     flex-wrap: wrap;
     flex: 1 1 100vw;
-    background-image: url(resources/background_images.jpg);
+    background-image: url(resources/background_images.png);
     background-size: cover;
     background-attachment: fixed;
     min-height: 2000px;
@@ -37,8 +37,10 @@ nav {
     justify-content: right;
 }
 #logo {
-    width: 100px;
+    display: block;
+    width: 60px;
     margin-left: 10px;
+    border-radius: 50%;
 }
 .nav_item:hover {
     background-color: #0c6aa8;
@@ -55,6 +57,7 @@ nav {
 main {
     padding: 10px;
     color: var(--color3);
+    text-shadow: 1px 1px 1px black;
 }
 
 #inicio {
@@ -67,6 +70,8 @@ main {
 #inicio > p {
     max-width: 500px;
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 #inicio > h1 {
     width: 350px;
@@ -74,6 +79,24 @@ main {
 }
 #sobre {
     margin: 150px 3px 3px 3px;
+}
+.box1 {
+    background-color: rgba(255, 255, 255, 0.205);
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.box11 {
+    background-color: var(--color1);
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 5px;
+    color: var(--color3);
+    text-shadow: none;
 }
 #projetos {
     margin: 150px 3px 3px 3px;
