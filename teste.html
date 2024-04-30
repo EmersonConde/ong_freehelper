@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desfoque e Texto</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    .container {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.container:hover img {
+  filter: blur(5px); /* Aplica o efeito de desfoque na imagem quando o mouse está sobre ela */
+}
+
+.container:hover .overlay {
+  opacity: 1; /* Torna o overlay visível quando o mouse está sobre a imagem */
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="image-container">
+    <img src="sua-imagem.jpg" alt="Imagem">
+    <div class="overlay">
+      <div class="text">
+        Seu texto aqui
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
