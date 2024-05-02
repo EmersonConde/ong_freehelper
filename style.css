@@ -34,6 +34,7 @@ header {
     z-index: +1;
 }
 nav {
+    width: 100%;
     display: flex;
     margin: 3px;
     justify-content: right;
@@ -119,6 +120,17 @@ main {
     text-align: center;
     margin: 5px;
 }
+.box14 {
+    background-color: var(--color1);
+    border-radius: 5px;
+    width: 350px;
+    border: 1px solid black;
+    padding: 5px;
+    color: var(--color3);
+    text-shadow: none;
+    text-align: center;
+    margin: 5px;
+}
 .container {
     width: 268px;
     margin: auto;
@@ -184,5 +196,14 @@ footer {
     .text_imagem {
         z-index: 1;
         font-size: 6px;
+    }
+}
+@media (width <= 416px) {
+    header nav .nav_item {
+        width: 70px;
+    }
+    header {
+        height: 40px;
+        top: 5px;
     }
 }
