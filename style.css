@@ -163,3 +163,26 @@ footer {
     margin: 3px;
     flex: 1 1 100vw;
 }
+@media (width <= 630px) {
+    #logo {
+        top: 80px;
+        left: 6px;
+    }
+    .box12 {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .box12 img {
+        display: none;
+    }
+    .box13 {
+        width: 150px;
+    }
+    .container {
+        width: 134px;
+    }
+    .text_imagem {
+        z-index: 1;
+        font-size: 6px;
+    }
+}
